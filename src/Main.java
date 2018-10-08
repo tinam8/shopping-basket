@@ -67,8 +67,8 @@ public class Main {
 	
 		
 		
-//		List<Discount> discounts = Arrays.asList(discount1, discount2, discount4)
-		List<Discount> discounts = Arrays.asList(discount1, discount2);
+		List<Discount> discounts = Arrays.asList(discount1, discount2, discount4);
+//		List<Discount> discounts = Arrays.asList(discount1, discount2);
 //		List<Discount> discounts = Arrays.asList(discount1, discount2, discount3);
 		List<DiscountResult> discountResults = DiscountResultResolver.computeApplicableDiscountResults(shoppingBasket.getAddedItems(), discounts);
 

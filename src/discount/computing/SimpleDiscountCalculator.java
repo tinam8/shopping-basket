@@ -20,7 +20,7 @@ public class SimpleDiscountCalculator {
 
   private boolean resultIsAppliable(IBasketItem item, DiscountResult discountResult, boolean applied) {
     return (item.getItem() != discountResult.getItem() || applied
-        || item.getAppliedDiscountResults().contains(discountResult));
+        || item.getAppliedDiscountResults().contains(discountResult) || item.getTotalPrice() == 0);
   }
 
   /**
